@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import Quiz from "./components/Quiz";
+
+const questions = [
+  {
+    question: 'What is the capital of France?',
+    options: ['London', 'Paris', 'Berlin', 'Rome'],
+    answer: 'Paris'
+  },
+  {
+    question: 'What is the capital of Italy?',
+    options: ['Paris', 'Rome', 'Madrid', 'Amsterdam'],
+    answer: 'Rome'
+  }
+];
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+ <Quiz questions={questions} />
     </div>
   );
 }
