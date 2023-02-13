@@ -1,7 +1,7 @@
 
 import './App.css';
 import Quiz from "./components/Quiz";
-
+import Login from "./components/Login";
 const questions = [
   {
     question: 'What is the capital of France?',
@@ -17,7 +17,7 @@ const questions = [
 function App() {
   return (
     <div className="App">
- <Quiz questions={questions} />
+ <Login />
     </div>
   );
 }
